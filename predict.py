@@ -8,7 +8,8 @@ from keras.models import load_model
 model = load_model("captcha_model.h5")
 
 # Define symbols
-symbols = string.ascii_lowercase + "0123456789"
+#symbols = string.ascii_lowercase + "0123456789"
+symbols = "bcdefgmnpwxy" + "2345678"
 
 # Define image shape
 img_shape = (50, 200, 1)
